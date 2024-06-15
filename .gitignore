@@ -1,0 +1,8 @@
+# Ignore venv file
+venv/
+
+# Ignore datasets
+New Plant Diseases Dataset(Augmented)
+
+# Ignore tuned model information
+keras_ResNet50_BiLSTM_tuner_hyperband

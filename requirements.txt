@@ -1,15 +1,10 @@
-pandas
-langdetect
-matplotlib
-seaborn
-wordcloud
 tensorflow==2.10
+matplotlib
+os
 numpy
-transformers
-scikit-learn
-torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
-nltk
-wordninja
-spacy
-imbalanced-learn
+seaborn
+pandas
+opencv-python
+scipy==1.8.0
 keras-tuner
+scikit-learn
