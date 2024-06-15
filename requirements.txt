@@ -1,0 +1,10 @@
+tensorflow==2.10
+matplotlib
+os
+numpy
+seaborn
+pandas
+opencv-python
+scipy==1.8.0
+keras-tuner
+scikit-learn
