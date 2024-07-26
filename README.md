@@ -16,6 +16,22 @@ Throughout the implementation, various optimization techniques will be explored 
 * To build and train a deep learning model and subsequently evaluate its performance using appropriate metrics.
 * To optimize the deep learning model by analyzing and improving multiple model variants based on performance metrics to achieve optimal results.
 
+# Model Summary Result 📝
+| Parameter / Model Variants | ResNet50-BiLSTM (4 Layers) | ResNet50-BiLSTM (5 Layers) | ResNet50-BiLSTM (7 Layers) | ResNet50-BiLSTM (9 Layers) | Tuned ResNet50-BiLSTM (9 Layers)
+|:----------------------------|:----------------------------|:----------------------------|:----------------------------|:----------------------------|:----------------------------|
+| **Optimizer**              | Adam                       | Adam                       | Adam                       | Adam                       | Adam
+| **Initial Learning Rate**  | 1e-6                       | 1e-6                       | 1e-6                       | 1e-6                       | 1e-6
+| **Epochs**                 | 100                        | 100                        | 100                        | 300                        | 229
+| **Accuracy (%)**           |                            |                            |                            |                            | 
+| Training                   | 70.88%                     | 79.29%                     | 87.16%                     | 84.10%                     | 79.32%
+| Validation                 | 68.38%                     | 74.50%                     | 78.91%                     | 80.65%                     | 78.47%
+| **Loss**                   |                            |                            |                            |                            | 
+| Training                   | 0.8907                     | 0.6385                     | 0.4434                     | 0.4852                     | 0.6190
+| Validation                 | 0.9368                     | 0.7376                     | 0.6303                     | 0.5788                     | 0.6297
+| **Elapsed Time**           | 3h 26m 12.9s               | 3h 23m 4.7s                | 3h 32m 26.2s               | 9h 4m 22.9s                | 7h 53m 47.6s
+| **Total Parameter**        | 38,402,442                 | 38,459,786                 | 38,623,882                 | 38,623,882                 | 54,192,522
+| **Batch Size**             | 32                         | 32                         | 32                         | 32                         | 32
+
 # Dataset 🛢️
 * **Dataset**: [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)
 * **Description**: This dataset comes with three subsets, known as training, validation, and test. It consists of about 87K RGB images of healthy and diseased crop leaves, categorized into 38 different classes. However, the classes related to tomatoes have been chosen for the success of this project. Therefore, there are a total of 10 classes focused on in this project: one healthy tomato plant class and nine tomato plant disease classes. The following are the labels of each class: **Bacterial Spot**, **Early Blight**, **Healthy**, **Late Blight**, **Leaf Mold**, **Septoria Leaf Spot**, **Spider Mites**, **Target Spot**, **Mosaic Virus**, **Yellow Leaf Curl Virus**.
